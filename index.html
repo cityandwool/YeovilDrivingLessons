@@ -1,79 +1,283 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Driving lessons with A Star Driving Tution</title>
+	<meta name="description" content="Book a driving lesson with A Star Driving Tution in Yeovil, Somerset today">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<style>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Yeovildrivingschool : Yeovil Driving School" />
+	body {
+		font-family: 'Lato', sans-serif;
+		font-size: 16px;
+		margin: 0px;
+		background: #ecf0f1;
+	}
+	header {
+		background: #3498db url('assets/img/blue-background.png') no-repeat fixed top center;
+		background-size: cover;
+		padding: 40px 0px;
+		margin-bottom: 40px;
+		color: #FFF;
+		border-bottom: 5px solid #E0E0E0;
+	}
+	.container {
+		max-width: 70%;
+		margin: 0 auto;
+	}
+	h1 {
+		font-size: 50px;
+		font-weight: 300;
+	}
+	h1 span {
+		color: #F0D35E;
+	}
+	h2 {
+		font-size: 30px;
+		font-weight: 300;
+	}
+	h2 a {
+		text-decoration: none;
+		color: #FFF;
+		text-shadow: 1px 0 0 #3498db, -1px 0 0 #3498db;
+		background-image: linear-gradient(to left, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+		background-position: 0 1.2em;
+		background-repeat: repeat-x;
+		background-size: 1px 1px;
+	}
+	h2 a:hover {
+		background-image: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+	}
+	h3 {
+		font-size: 20px;
+		font-weight: 300;
+		margin-bottom: 40px;
+	}
+	p {
+		margin-top: 0px;
+		line-height: 22px;
+	}
+	.name {
+		margin: 0px;
+		color: #3498db;
+	}
+	.masonry-grid {
+		padding: 0px 20px;
+		margin: 0px auto;
+	}
+	article {
+		position: relative;
+		width: 300px;
+		float: left;
+		margin: 0px 20px 20px 0px;
+		padding: 20px 20px 20px 20px;
+		display: block;
+		background: #FFF;
+		border-bottom: 2px solid #E0E0E0;
+	}
+	.more-info {
+		background-color: #3498db;
+		color: #FFF;
+		border-bottom-color: #2980b9;
+	}
+	.more-info h3 {
+		font-size: 30px;
+		margin-top: 0px;
+		margin-bottom: 20px;
+	}
+	.book {
+		position: relative;
+		padding-top: 40px;
+		margin-bottom: 0px;
+	}
+	.book:before {
+		content: '';
+		display: block;
+		position: absolute;
+		height: 1px;
+		background: #FFF;
+		width: 50px;
+		top: 20px;
+	}
+	.more-info a {
+		text-decoration: none;
+		color: #FFF;
+		text-shadow: 1px 0 0 #3498db, -1px 0 0 #3498db;
+		background-image: linear-gradient(to left, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+		background-position: 0 1.18em;
+		background-repeat: repeat-x;
+		background-size: 1px 1px;
+	}
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+	.more-info a:hover {
+		background-image: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+	}
+	.quote {
+		padding-top: 80px
+	}
+	.quote:before {
+		position: absolute;
+		top: 14px;
+		left: 20px;
+		content: '“';
+		font-family: Georgia, Times, serif;
+		font-size: 80px;
+		color: #3498db;
+	}
+	.info {
+		background: #2980b9;
+	}
+	.tabs a {
+		position: relative;
+		display: inline-block;
+		height: 60px;
+		line-height: 60px;
+		padding: 0px 20px;
+		color: #FFF;
+		text-decoration: none;
+	}
+	.tabs a i {
+		margin-right: 5px;
+	}
+	.tabs a:hover i {
+		color: #2980b9;
+	}
+	.tabs a:hover {
+		background: #FFF;
+		color: #000;
+	}
+	.tabs a:hover:before {
+		content: '';
+		position: absolute;
+		display: block;
+		left: 0px;
+		bottom: 0px;
+		width: 0; 
+		height: 0; 
+		border-top: 30px solid transparent;
+		border-bottom: 30px solid transparent; 
+		border-left:10px solid #2980b9;
+	}
+	.tabs a:hover:after {
+		content: '';
+		position: absolute;
+		display: block;
+		background: #2980b9;
+		right: 0px;
+		bottom: 0px;
+		width: 0; 
+		height: 0; 
+		border-top: 30px solid transparent;
+		border-bottom: 30px solid transparent; 
+		border-left:10px solid #FFF;
+	}
 
-    <title>Yeovildrivingschool</title>
-  </head>
+	</style>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
 
-  <body>
+<header id="top" role="banner">
+	<div class="container">
+		<h1>Book a driving lesson with <br><span>A Star Driving Tuition</span> <br>in Yeovil, Somerset</h1>
+	</div>
+	<div class="info">
+		<div class="container tabs">
+			<a href="#sam"><i class="fa fa-user"></i> The instructor</a>
+			<a href="#info"><i class="fa fa-info-circle"></i> Service information</a>
+			<a href="#rates"><i class="fa fa-info-circle"></i> Rates</a>
+		</div>
+	</div>
+	<div class="container">
+		<h2>Book today by calling us on <a href="tel:07724268082">077 24 26 80 82</a> <br>and join the long list of happy, first-time drivers</h2>
+	</div>
+</header>
+<main role="main">
+	<div class="container">
+		<h3>What the students say</h3>
+	</div>
+	<div class="masonry-grid">
+		<article class="quote">
+			<p>Sam was a really great driving instructor. I transferred to him after being with an instructor who made me scared of driving, and Sam helped me to gain my confidence. Sam made lessons interesting and challenging, as well as making sure I always understood what I needed to do. He was always patient and happy to explain things as many times as you asked. I would definitely recommend Sam as an instructor.</p>
+			<p class="name">Emily</p>
+		</article>
+		<article class="quote">
+			<p>I really enjoyed my lessons with A Star driving school; my instructor was incredibly patient, helpful and encouraging. Sam not only taught me the basics of driving, but encouraged me to become a confident and safe driver in all situations. The feedback was extremely useful as each week I could see the progress I was making. The lessons were well structured, punctual and affordable. I would recommend Sam to anyone looking to learn, he made me feel at ease and most of all made me enjoy driving! I'm really grateful for all of his help!</p>
+			<p class="name">Aimee</p>
+		</article>
+		<article class="quote">
+			<p>I enjoyed my lessons with A Star. Sam was a great instructor. He was very patient when teaching me. He was friendly, reliable and always made sure i understood each instruction. Thank you!</p>
+			<p class="name">Zoe</p>
+		</article>
+		<article class="quote">
+			<p>When learning with Sam, I felt at ease, did not feel under pressure when told instructions and never felt rushed when doing manoeuvres. The instructions were always clear, knew what I had to do and always felt relaxed when driving with Sam. Ultimately his teaching helped me to pass my test first time.</p>
+			<p class="name">Tom</p>
+		</article>
+		<article class="quote">
+			<p>I really enjoyed my lessons with A Star driving school. My instructor was kind, understanding and enthusiastic. The prices were good andresonable. Each lesson I learnt lots and felt I was making good progress to a high standard. I cant see any reason not to go with this company, it will be worth your while! I couldnt of asked for any better.</p>
+			<p class="name">Kristelle</p>
+		</article>
+		<article class="quote">
+			<p>I found Sam to be a very patient driving instructor who always made sure I understood each instruction and always stayed focussed on helping me to pass my test. Sam was always on time for my lessons and up to date on where I was in my driving abilities and gave encouraging feedback at the end of lessons to let me know how I was getting on. All in all, a very good driving instructor!! Thanks Sam!</p>
+			<p class="name">Chrissie</p>
+		</article>
+		<article class="quote">
+			<p>The driving lessons I found really helpful. The lessons were reasonably cheap. I managed to do it with little lessons and achieved a lot. I could choose when to have them and at a convenient time.</p>
+			<p class="name">Michael</p>
+		</article>
+		<article class="quote">
+			<p>I really enjoyed learning with Sam. He was very patient with me and always made sure I understood everything before moving on. The prices were very reasonable, and every lesson I felt that I was making progress. Sam made learning to drive really easy for me!</p>
+			<p class="name">Heather</p>
+		</article>
+		<article class="quote">
+			<p>Having had a really bad experience with a previous instructor and failing my first test I was looking for a new instructor. I trialed a few instructors as I wanted to make sure I got the best of the best to put me in a good position for my next test. I chose Sam and what a great choice it was!I am thrilled with the tuition that Sam provided; he was extremely thorough, calm and patient. Sam instilled me with the confidence I needed to pass my test in a short space of time. If you are looking for someone who is efficient and doesn't waste time chatting on the side of the road and lets you get on with it then I would highly recommend Sam. Furthermore he really listens to your requirements and gives you the freedom to work on specific areas of weakness. The service was tailor made and effective, give him a call and look forward to passing your test in no time!</p>
+			<p class="name">Alex</p>
+		</article>
+		<article class="quote">
+			<p>When I was looking for a driving instructor that ticked the boxes in terms of what was needed to be successful, it was unnecessary to look elsewhere from my A Star Driving School instructor. Where it seemed to be a cut above the rest was in terms of quality for the cost, prices were extremely reasonable for the market and combined with the well structured, challenging and importantly confidence building lessons make for a great prospect all round. My A Star Driving School instructor possessed the attributes that helped contribute to me passing first time, his patience, persistence and confidence in me were all instrumental to my success.</p>
+			<p class="name">Jon</p>
+		</article>
+		<article id="sam" class="more-info">
+			<h3>The instructor</h3>
+			<p>A STAR Driving Tuition is owned and run by it's sole proprietor Samuel Maynard.</p>
+			<p>Sam has been a qualified ADI instructor since 2008. During this time he has built up a reputation for being patient, conscientious, reliable and professional. Sam has always maintained a very high pass rate. Even getting a discount from his previous company he was with due to being in their top 10% of instructors.</p>
+			<p class="book">Book today by calling us on <a href="tel:07724268082">077 24 26 80 82</a></p>
+		</article>
+		<article id="info" class="more-info">
+			<h3>Service information</h3>
+			<ul>
+				<li><a href="#">Areas covered by our driving tuition</a></li>
+				<li><a href="#">Refresher Lessons</a></li>
+				<li><a href="#">Theory &amp; Hazard Perception Test</a></li>
+				<li><a href="#">Practical Driving Test</a></li>
+				<li><a href="#">Pass Plus</a></li>
+			</ul>
+		</article>
+		<article id="rates" class="more-info">
+			<h3>Rates</h3>
+			<p>Rates are £22 an hour with £10 discount if you book for 10 hours.</p>
+			<p>Flexible on what you want whether you want an hour or two a week
+			to as intense as you like to prepare for your test.</p>
+			<p>Easy to start just get in touch to arrange your lesson either email, phone or text and I will get back to you as soon as I can.</p>
+			<p class="book">Book today by calling us on <a href="tel:07724268082">077 24 26 80 82</a></p>
+		</article>
+	</div>			
+</main>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/cityandwool/YeovilDrivingSchool">View on GitHub</a>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js
+"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/3.1.2/masonry.pkgd.min.js"></script>
+<script>
 
-          <h1 id="project_title">Yeovildrivingschool</h1>
-          <h2 id="project_tagline">Yeovil Driving School</h2>
+$(document).ready(function() {
+	var $container = $('.masonry-grid');
+	$container.masonry({
+	  itemSelector: 'article',
+	  'isFitWidth': true
+	});
+});
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/cityandwool/YeovilDrivingSchool/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/cityandwool/YeovilDrivingSchool/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Yeovildrivingschool maintained by <a href="https://github.com/cityandwool">cityandwool</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+</script>
+</body>
 </html>
