@@ -14,7 +14,7 @@
 		background: #ecf0f1;
 	}
 	header {
-		background: #3498db url('assets/img/blue-background.png') no-repeat fixed top center;
+		background: #3498db url('assets/img/blue-background.png') no-repeat fixed bottom center;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -128,7 +128,8 @@
 		color: #3498db;
 	}
 	.info {
-		background: #2980b9;
+		background-image: url('assets/img/blue-trans.png');
+		background-repeat: repeat;
 	}
 	.tabs a {
 		position: relative;
@@ -181,6 +182,42 @@
 	.icon-practical-driving-test { }
 	.icon-pass-plus { }
 
+	.badge {
+		position: absolute;
+		top: 0px;
+		right: 15%;
+		background: #2ecc71;
+		text-align: center;
+	}
+	.badge:after {
+		content: '';
+		display: block;
+	}
+	.badge-content {
+		padding: 40px 20px 10px 20px;
+		text-transform: uppercase;
+	}
+	.star-rating {
+		margin: 0px 0px 10px 0px;
+		padding: 0px;
+		text-align: center;
+	}
+	.star-rating li {
+		display: inline-block;
+		padding: 0px 5px;
+	}
+	.a-star {
+		margin-bottom: 5px;
+		font-size: 40px;
+        /* #27ae60; */
+	}
+	.driving-tuition {
+		margin-bottom: 10px;
+	}
+	.number {
+		font-size: 19px;
+	}
+
 	</style>
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -195,16 +232,30 @@
 		<div class="container tabs">
 			<a href="#sam"><i class="fa fa-user"></i> The instructor</a>
 			<a href="#info"><i class="fa fa-info-circle"></i> Service information</a>
-			<a href="#rates"><i class="fa fa-info-circle"></i> Rates</a>
+			<a href="#rates"><i class="fa fa-money"></i> Rates</a>
 		</div>
 	</div>
 	<div class="container">
 		<h2>Book today by calling us on <a href="tel:07724268082">077 24 26 80 82</a> <br>and join the long list of happy, first-time drivers</h2>
 	</div>
+	<div class="badge">
+		<div class="badge-content">
+			<p class="a-star">A Star</p>
+			<p class="driving-tuition">Driving Tuition</p>
+			<ul class="star-rating">
+				<li><i class="fa fa-star"></i></li>
+				<li><i class="fa fa-star"></i></li>
+				<li><i class="fa fa-star"></i></li>
+				<li><i class="fa fa-star"></i></li>
+				<li><i class="fa fa-star"></i></li>
+			</ul>
+			<p class="number">077 24 26 80 82</p>
+		</div>
+	</div>
 </header>
 <main role="main">
 	<div class="container">
-		<h3>What the students say</h3>
+		<h3>What the students say...</h3>
 	</div>
 	<div class="masonry-grid">
 		<article class="quote">
