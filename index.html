@@ -25,7 +25,7 @@
 		border-bottom: 5px solid #E0E0E0;
 	}
 	.container {
-		max-width: 70%;
+		max-width: 80%;
 		margin: 0 auto;
 	}
 	h1 {
@@ -70,7 +70,7 @@
 	}
 	article {
 		position: relative;
-		width: 240px;
+		width: 220px;
 		float: left;
 		margin: 0px 20px 20px 0px;
 		padding: 20px 20px 20px 20px;
@@ -188,6 +188,7 @@
 		right: 15%;
 		background: #2ecc71;
 		text-align: center;
+		border-bottom: 3px solid #27ae60;
 	}
 	.badge:after {
 		content: '';
@@ -216,6 +217,106 @@
 	}
 	.number {
 		font-size: 19px;
+		color: #FFF;
+		text-decoration: none;
+		line-height: 22px;
+		display: block;
+	}
+
+	@media all and (max-width: 1100px) {
+
+		.badge {
+			right: 0px;
+			left: 0px;
+		}
+		.star-rating {
+			display: none;
+		}
+		.a-star {
+			font-size: 16px;
+			float: left;
+		}
+		.driving-tuition {
+			margin-left: 5px;
+			float: left;
+		}
+		.number {
+			font-size: 16px;
+			float: right;
+		}
+		.badge-content {
+			padding-top: 10px;
+		}
+
+	}
+
+	@media all and (max-width: 840px) {
+
+		.container {
+			max-width: 90%;
+		}
+
+	}
+
+	@media all and (max-width: 680px) {
+		
+		h1 {
+			font-size: 36px;
+		}
+
+		h2 {
+			font-size: 24px;
+		}
+
+	}
+
+	@media all and (max-width: 540px) {
+	
+		.tabs a {
+			height: 44px;
+			line-height: 44px;
+		}
+		.tabs a:hover:before {
+			border-top-width: 22px;
+			border-bottom-width: 22px;
+			border-left-width: 10px;
+		}
+		.tabs a:hover:after {
+			border-top-width: 22px;
+			border-bottom-width: 22px;
+			border-right-width: 10px;
+		}
+		.tabs a span {
+			display: none;
+		}
+		.tabs a i {
+			padding-left: 7px;
+		}
+		article {
+			margin-right: 0px;
+		}
+
+	}
+
+	@media all and (max-width: 520px) {
+
+		br {
+			display: none;
+		}
+		
+	
+	}
+
+	@media all and (max-width: 400px) {
+
+		.badge, .a-star, .number {
+			font-size: 12px;
+		}
+		.badge-content {
+			padding: 10px;
+		}
+	
+	
 	}
 
 	</style>
@@ -230,17 +331,17 @@
 	</div>
 	<div class="info">
 		<div class="container tabs">
-			<a href="#sam"><i class="fa fa-user"></i> The instructor</a>
-			<a href="#info"><i class="fa fa-info-circle"></i> Service information</a>
-			<a href="#rates"><i class="fa fa-money"></i> Rates</a>
+			<a href="#sam"><i class="fa fa-user"></i> <span>The instructor</span></a>
+			<a href="#info"><i class="fa fa-info-circle"></i> <span>Service information</span></a>
+			<a href="#rates"><i class="fa fa-money"></i> <span>Rates</span></a>
 		</div>
 	</div>
 	<div class="container">
-		<h2>Book today by calling us on <a href="tel:07724268082">077 24 26 80 82</a> <br>and join the long list of happy, first-time drivers</h2>
+		<h2>Book today by calling us on <a href="tel:07724268082">077&nbsp;24&nbsp;26&nbsp;80&nbsp;82</a> <br>and join the long list of happy, first-time drivers</h2>
 	</div>
 	<div class="badge">
 		<div class="badge-content">
-			<p class="a-star">A Star</p>
+			<p class="a-star">A&nbsp;Star</p>
 			<p class="driving-tuition">Driving Tuition</p>
 			<ul class="star-rating">
 				<li><i class="fa fa-star"></i></li>
@@ -249,7 +350,7 @@
 				<li><i class="fa fa-star"></i></li>
 				<li><i class="fa fa-star"></i></li>
 			</ul>
-			<p class="number">077 24 26 80 82</p>
+			<a href="tel:07724268082" class="number">077&nbsp;24&nbsp;26&nbsp;80&nbsp;82</a></p>
 		</div>
 	</div>
 </header>
@@ -302,7 +403,7 @@
 			<h3>The instructor</h3>
 			<p>A STAR Driving Tuition is owned and run by it's sole proprietor Samuel Maynard.</p>
 			<p>Sam has been a qualified ADI instructor since 2008. During this time he has built up a reputation for being patient, conscientious, reliable and professional. Sam has always maintained a very high pass rate. Even getting a discount from his previous company he was with due to being in their top 10% of instructors.</p>
-			<p class="book">Book today by calling us on <a href="tel:07724268082">077 24 26 80 82</a></p>
+			<p class="book">Book today by calling us on <a href="tel:07724268082">077&nbsp;24&nbsp;26&nbsp;80&nbsp;82</a></p>
 		</article>
 		<article id="info" class="more-info">
 			<h3>Service information</h3>
@@ -320,7 +421,7 @@
 			<p>Flexible on what you want whether you want an hour or two a week
 			to as intense as you like to prepare for your test.</p>
 			<p>Easy to start just get in touch to arrange your lesson either email, phone or text and I will get back to you as soon as I can.</p>
-			<p class="book">Book today by calling us on <a href="tel:07724268082">077 24 26 80 82</a></p>
+			<p class="book">Book today by calling us on <a href="tel:07724268082">077&nbsp;24&nbsp;26&nbsp;80&nbsp;82</a></p>
 		</article>
 	</div>			
 </main>
