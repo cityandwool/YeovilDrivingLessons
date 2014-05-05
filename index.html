@@ -42,7 +42,6 @@
 	h2 a {
 		text-decoration: none;
 		color: #FFF;
-		text-shadow: 1px 0 0 #3498db, -1px 0 0 #3498db;
 		background-image: linear-gradient(to left, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
 		background-position: 0 1.18em;
 		background-repeat: repeat-x;
@@ -175,12 +174,46 @@
 		border-bottom: 30px solid transparent; 
 		border-left:10px solid #FFF;
 	}
-	.icon { }
-	.icon-area { }
-	.icon-refresher-lessons { }
-	.icon-theory-hazard { }
-	.icon-practical-driving-test { }
-	.icon-pass-plus { }
+	.icons {
+		margin: 0px;
+		padding: 0px;
+	}
+	.icons li {
+		list-style: none;
+		position: relative;
+		padding-bottom: 5px;
+	}
+	.icons li a {
+		display: block;
+		padding: 10px 10px 10px 70px;
+		text-shadow: none;
+		background-image: none;
+		border: 1px solid #FFF;
+	}
+	.icons li a:hover {
+		text-shadow: none;
+		background-image: none;
+		border: 1px solid #2980b9;
+		background: #2980b9;
+		color: #FFF;
+	}
+	.icons li a i {
+		position: absolute;
+		left: 20px;
+		font-size: 30px;
+	}
+	.icon {
+
+	}
+
+	li.icon-refresher-lessons a, li.icon-pass-plus a {
+		padding: 15px 10px 15px 70px;
+	}
+	.icon-area i { top: 16px; }
+	.icon-refresher-lessons i { top: 12px; }
+	.icon-theory-hazard i { top: 18px; }
+	.icon-practical-driving-test i { top: 17px; }
+	.icon-pass-plus i { top: 13px; }
 
 	.badge {
 		position: absolute;
@@ -311,11 +344,7 @@
 
 		.badge, .a-star, .number {
 			font-size: 12px;
-		}
-		.badge-content {
-			padding: 10px;
-		}
-	
+		}	
 	
 	}
 
@@ -407,12 +436,13 @@
 		</article>
 		<article id="info" class="more-info">
 			<h3>Service information</h3>
-			<ul>
-				<li class="icon icon-area"><a href="#">Areas covered by our driving tuition</a></li>
-				<li class="icon icon-refresher-lessons"><a href="#">Refresher Lessons</a></li>
-				<li class="icon icon-theory-hazard"><a href="#">Theory &amp; Hazard Perception Test</a></li>
-				<li class="icon icon-practical-driving-test"><a href="#">Practical Driving Test</a></li>
-				<li class="icon icon-pass-plus"><a href="#">Pass Plus</a></li>
+			<p>Select a document to view or download:</p>
+			<ul class="icons">
+				<li class="icon icon-area"><a href="assets/docs/Areas-Covered_A-Star-Driving-Tuition.pdf"><i class="fa fa-location-arrow"></i> Areas covered by our driving tuition</a></li>
+				<li class="icon icon-refresher-lessons"><a href="assets/docs/Refresher-Lessons_A-Star-Driving-Tuition.pdf"><i class="fa fa-refresh"></i> Refresher Lessons</a></li>
+				<li class="icon icon-theory-hazard"><a href="assets/docs/Theory-and-Hazard-Perception-Test_A-Star-Driving-Tuition.pdf"><i class="fa fa-exclamation-triangle"></i> Theory &amp; Hazard Perception Test</a></li>
+				<li class="icon icon-practical-driving-test"><a href="assets/docs/Practical-Driving-Test_A-Star-Driving-Tuition.pdf"><i class="fa fa-road"></i> Practical Driving Test</a></li>
+				<li class="icon icon-pass-plus"><a href="assets/docs/Pass-Plus_A-Star-Driving-Tuition.pdf"><i class="fa fa-plus"></i> Pass Plus</a></li>
 			</ul>
 		</article>
 		<article id="rates" class="more-info">
